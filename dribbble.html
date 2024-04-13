@@ -45,6 +45,33 @@
       span{
         cursor: pointer;
       }
+      @media screen and (max-width: 1200px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+        .leftbar{
+          display: none;
+        }
+        .rightbar {
+                 text-align: center;
+          grid-column-start: auto;
+          margin-top: 180px;
+          margin-left: 100px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        button {
+          padding: 5px 30px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        button {
+          padding: 5px 15px;
+        }
+      }
+      
     </style>
   </head>
   <body>

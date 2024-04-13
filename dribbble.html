@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 350px 160px 450px;
+        font-family: system-ui;
+      }
+      .leftbar {
+        width: 100%;
+        height: 100vh;
+      }
+      .rightbar {
+        grid-column-start: 3;
+        text-align: start;
+        flex-direction: column;
+        margin-top: 180px;
+      }
+      button {
+        margin-top: 30px;
+        background-color: #fff;
+        border-radius: 50px;
+        border-style: none;
+        color: black;
+        border: 0.5px solid grey;
+        cursor: pointer;
+        font-weight: 700;
+        padding: 10px 150px;
+        text-align: center;
+        transition: 0.4s;
+      }
+      button:hover {
+        background-color: rgb(60, 86, 171);
+        color: white;
+        border: 2px solid white;
+      }
+      .underbar {
+        margin-top: 50px;
+        text-align: center;
+      }
+      span{
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftbar">
+        <img
+          class="leftbar"
+          src="https://images.unsplash.com/photo-1505673542670-a5e3ff5b14a3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+          alt="green-image"
+        />
+      </div>
+      <div class="rightbar">
+        <h2>Sign Up to Dribbble</h2>
+        <p>
+          Your Google account will be added to your new Dribble Account <br />
+          Wrong Identity? Startover
+        </p>
+        <button>Continue with Email</button>
+
+        <div class="underbar">
+          <p class="info">
+            By creating an account with our
+            <span
+              ><u> Terms of Service , Privacy Policy </u><br />
+              </span>and our default <span><u>Notification Settings</u></span>
+          </p>
+          <p>
+            Already have an Account? <span><u>Sign In</u></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
